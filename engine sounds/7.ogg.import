@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckhm05fdvk5rf"
+path="res://.godot/imported/7.ogg-677f305605ea7b9e72b46f3fa8dfd9bf.oggvorbisstr"
+
+[deps]
+
+source_file="res://engine sounds/7.ogg"
+dest_files=["res://.godot/imported/7.ogg-677f305605ea7b9e72b46f3fa8dfd9bf.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,976 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4j8prwa2veg8"]
+
+[ext_resource type="Script" path="res://addons/vitavehicle_ui/graph.gd" id="3"]
+[ext_resource type="Script" path="res://addons/vitavehicle_ui/handler.gd" id="4"]
+[ext_resource type="Script" path="res://addons/vitavehicle_ui/tune_vars.gd" id="5"]
+[ext_resource type="FontFile" uid="uid://btyvoi7jkhec0" path="res://FONT/DroidSans.ttf" id="5_f53yw"]
+[ext_resource type="Texture2D" uid="uid://c7svv1ate0uo" path="res://logo.png" id="8_gsl8m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("4")
+
+[node name="Engine_Tuner" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="power_graph" type="Control" parent="Engine_Tuner"]
+anchors_preset = 0
+anchor_left = 0.0478516
+anchor_top = 0.0866667
+anchor_right = 0.601563
+anchor_bottom = 0.591667
+script = ExtResource("3")
+BuildUpTorque = 0.004
+OffsetTorque = 110.0
+VVT_OffsetTorque = 70.0
+MaxPSI = 8.0
+TurboAmount = 1.0
+
+[node name="torque" type="Line2D" parent="Engine_Tuner/power_graph"]
+points = PackedVector2Array(64.8811, 173.589, 72.9811, 170.753, 81.0811, 168.609, 89.1811, 166.946, 97.2811, 165.604, 105.381, 164.502, 113.481, 163.578, 121.581, 162.791, 129.681, 162.105, 137.781, 161.495, 145.881, 160.941, 153.981, 160.427, 162.081, 159.942, 170.181, 159.474, 178.281, 159.017, 186.381, 158.564, 194.481, 158.109, 202.581, 157.649, 210.681, 157.18, 218.781, 156.7, 226.881, 156.207, 234.981, 155.698, 243.081, 155.174, 251.181, 154.632, 259.281, 154.073, 267.381, 153.495, 275.481, 152.9, 283.581, 152.286, 291.681, 151.947, 299.781, 152.167, 307.881, 152.943, 315.981, 154.264, 324.081, 156.108, 332.181, 158.446, 340.281, 161.244, 348.381, 164.461, 356.481, 168.053, 364.581, 169.136, 372.681, 165.944, 380.781, 162.699, 388.881, 159.404, 396.981, 156.061, 405.081, 152.674, 413.181, 149.664, 421.281, 147.459, 429.381, 146.085, 437.481, 145.544, 445.581, 145.821, 453.681, 146.884, 461.781, 148.686, 469.881, 151.168, 477.981, 154.261, 486.081, 157.894, 494.181, 161.992, 502.281, 166.481, 510.381, 171.289, 518.481, 176.352, 526.581, 181.605, 534.681, 186.995, 542.781, 192.471, 550.881, 197.992, 558.981, 203.52)
+width = 5.0
+default_color = Color(0, 0.5, 1, 1)
+
+[node name="peak" type="Polygon2D" parent="Engine_Tuner/power_graph/torque"]
+position = Vector2(438.777, 145.534)
+color = Color(0, 0.5, 1, 1)
+polygon = PackedVector2Array(-10, 10, 10, 10, 10, -10, -10, -10)
+
+[node name="power" type="Line2D" parent="Engine_Tuner/power_graph"]
+points = PackedVector2Array(64.8811, 283.263, 72.9811, 280.313, 81.0811, 277.386, 89.1811, 274.479, 97.2811, 271.581, 105.381, 268.692, 113.481, 265.809, 121.581, 262.929, 129.681, 260.05, 137.781, 257.17, 145.881, 254.286, 153.981, 251.395, 162.081, 248.495, 170.181, 245.584, 178.281, 242.66, 186.381, 239.72, 194.481, 236.762, 202.581, 233.784, 210.681, 230.784, 218.781, 227.761, 226.881, 224.712, 234.981, 221.636, 243.081, 218.532, 251.181, 215.397, 259.281, 212.232, 267.381, 209.033, 275.481, 205.801, 283.581, 202.534, 291.681, 199.431, 299.781, 196.71, 307.881, 194.4, 315.981, 192.524, 324.081, 191.097, 332.181, 190.126, 340.281, 189.612, 348.381, 189.547, 356.481, 189.919, 364.581, 188.278, 372.681, 182.933, 380.781, 177.418, 388.881, 171.735, 396.981, 165.881, 405.081, 159.858, 413.181, 154.072, 421.281, 148.97, 429.381, 144.621, 437.481, 141.076, 445.581, 138.369, 453.681, 136.51, 461.781, 135.494, 469.881, 135.296, 477.981, 135.881, 486.081, 137.2, 494.181, 139.197, 502.281, 141.812, 510.381, 144.982, 518.481, 148.644, 526.581, 152.736, 534.681, 157.198, 542.781, 161.977, 550.881, 167.021, 558.981, 172.285)
+width = 5.0
+default_color = Color(1, 0, 0, 1)
+
+[node name="peak" type="Polygon2D" parent="Engine_Tuner/power_graph/power"]
+position = Vector2(467.856, 135.271)
+color = Color(1, 0, 0, 1)
+polygon = PackedVector2Array(-10, 10, 10, 10, 10, -10, -10, -10)
+
+[node name="ColorRect" type="ColorRect" parent="Engine_Tuner/power_graph"]
+show_behind_parent = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.184314)
+
+[node name="tq" type="Label" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.0498047
+anchor_top = 0.603333
+anchor_right = 0.601563
+anchor_bottom = 0.636667
+theme_override_colors/font_color = Color(0.501961, 0.501961, 1, 1)
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Torque: 0000 unit @ 00000 RPM"
+
+[node name="hp" type="Label" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.0498047
+anchor_top = 0.645
+anchor_right = 0.601563
+anchor_bottom = 0.678333
+theme_override_colors/font_color = Color(1, 0.501961, 0.501961, 1)
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Power: 0000 unit @ 00000 RPM"
+
+[node name="label2" type="Label" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.0136719
+anchor_top = 0.763333
+anchor_right = 0.588867
+anchor_bottom = 0.873333
+theme_override_colors/font_color = Color(1, 0.270588, 0.270588, 1)
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Warning: Currently no undo steps will be created when applying. Use with caution.
+I suggest that you backup your vehicle."
+vertical_alignment = 2
+
+[node name="ColorRect" type="ColorRect" parent="Engine_Tuner"]
+show_behind_parent = true
+layout_mode = 0
+anchor_left = 0.634766
+anchor_top = 0.103333
+anchor_right = 0.974609
+anchor_bottom = 0.946667
+color = Color(0, 0, 0, 0.184314)
+
+[node name="tune" type="ScrollContainer" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.634766
+anchor_top = 0.103333
+anchor_right = 0.974609
+anchor_bottom = 0.946667
+
+[node name="container" type="VBoxContainer" parent="Engine_Tuner/tune"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SpinBox" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "EngineFriction"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox5" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "EngineDrag"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox5"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox6" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "IdleRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox6"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox7" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "RPMLimit"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox7"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox8" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVTRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox8"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox9" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "BuildUpTorque"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox9"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox10" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "TorqueRise"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox10"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox11" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "RiseRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox11"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox4" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "OffsetTorque"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox4"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox12" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "FloatRate"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox12"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox23" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "DeclineRate"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox23"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox13" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "DeclineRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox13"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox14" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "DeclineSharpness"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox14"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox15" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_BuildUpTorque"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox15"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox16" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_TorqueRise"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox16"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox17" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_RiseRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox17"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox18" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_OffsetTorque"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox18"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox19" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_FloatRate"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox19"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox24" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_DeclineRate"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox24"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox20" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_DeclineRPM"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox20"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox21" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "VVT_DeclineSharpness"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox21"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CheckBox" type="CheckBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+script = ExtResource("5")
+var_name = "TurboEnabled"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/CheckBox"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox2" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "MaxPSI"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox22" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "EngineCompressionRatio"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox22"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SpinBox3" type="SpinBox" parent="Engine_Tuner/tune/container"]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+max_value = 1e+08
+allow_greater = true
+allow_lesser = true
+alignment = 1
+script = ExtResource("5")
+var_name = "TurboAmount"
+
+[node name="varname" type="Label" parent="Engine_Tuner/tune/container/SpinBox3"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="back" type="Button" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.0136719
+anchor_top = 0.886667
+anchor_right = 0.142579
+anchor_bottom = 0.966667
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="apply" type="Button" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.163086
+anchor_top = 0.886667
+anchor_right = 0.291993
+anchor_bottom = 0.966667
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 20
+text = "Apply"
+
+[node name="unitq" type="Button" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.373047
+anchor_top = 0.6
+anchor_right = 0.600586
+anchor_bottom = 0.643333
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "change torque unit"
+flat = true
+alignment = 2
+
+[node name="unihp" type="Button" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.373047
+anchor_top = 0.65
+anchor_right = 0.600586
+anchor_bottom = 0.693333
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "change horsepower unit"
+flat = true
+alignment = 2
+
+[node name="append" type="Button" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_left = 0.311523
+anchor_top = 0.886667
+anchor_right = 0.440431
+anchor_bottom = 0.966667
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 20
+text = "Import"
+
+[node name="label" type="Label" parent="Engine_Tuner"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 0.065
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Torque Curve Editor"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="confirm" type="ConfirmationDialog" parent="Engine_Tuner"]
+initial_position = 2
+
+[node name="confirm_append" type="ConfirmationDialog" parent="Engine_Tuner"]
+initial_position = 2
+
+[node name="alert" type="AcceptDialog" parent="Engine_Tuner"]
+initial_position = 2
+
+[node name="Collision" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="back" type="Button" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0136719
+anchor_top = 0.886667
+anchor_right = 0.142579
+anchor_bottom = 0.966667
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="apply" type="Button" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.163086
+anchor_top = 0.886667
+anchor_right = 0.291993
+anchor_bottom = 0.966667
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 20
+text = "Apply"
+
+[node name="label" type="Label" parent="Collision"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 0.065
+text = "CollisionShape Editor"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="label3" type="Label" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0410156
+anchor_top = 0.305
+anchor_right = 0.263672
+anchor_bottom = 0.37
+text = "Offset"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="label4" type="Label" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0410156
+anchor_top = 0.536667
+anchor_right = 0.263672
+anchor_bottom = 0.601667
+text = "Scale"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="confirm" type="ConfirmationDialog" parent="Collision"]
+initial_position = 2
+
+[node name="nothing" type="AcceptDialog" parent="Collision"]
+initial_position = 2
+dialog_text = "Nothing is selected."
+
+[node name="applied" type="AcceptDialog" parent="Collision"]
+initial_position = 2
+dialog_text = "Applied. Check your collision bounds."
+
+[node name="alert" type="AcceptDialog" parent="Collision"]
+initial_position = 2
+dialog_text = "An error occured."
+
+[node name="label2" type="Label" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0136719
+anchor_top = 0.701667
+anchor_right = 0.988281
+anchor_bottom = 0.811667
+theme_override_colors/font_color = Color(1, 0.270588, 0.270588, 1)
+text = "Warning: Currently no undo steps will be created when applying. Use with caution.
+I suggest that you duplicate the CollisionShape for backup and making its shape unique."
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="axis_x" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0410156
+anchor_top = 0.39
+anchor_right = 0.113281
+anchor_bottom = 0.49
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_x"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "X"
+
+[node name="axis_y" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.116211
+anchor_top = 0.39
+anchor_right = 0.188477
+anchor_bottom = 0.49
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_y"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "X"
+
+[node name="axis_z" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.191406
+anchor_top = 0.39
+anchor_right = 0.263672
+anchor_bottom = 0.49
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_z"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Z"
+
+[node name="axis_x2" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.0410156
+anchor_top = 0.625
+anchor_right = 0.113281
+anchor_bottom = 0.725
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+value = 1.0
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_x2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "X"
+
+[node name="axis_y2" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.116211
+anchor_top = 0.625
+anchor_right = 0.188477
+anchor_bottom = 0.725
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+value = 1.0
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_y2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "X"
+
+[node name="axis_z2" type="SpinBox" parent="Collision"]
+layout_mode = 0
+anchor_left = 0.191406
+anchor_top = 0.625
+anchor_right = 0.263672
+anchor_bottom = 0.725
+min_value = -10.0
+max_value = 10.0
+step = 0.001
+value = 1.0
+allow_greater = true
+allow_lesser = true
+alignment = 1
+
+[node name="varname" type="Label" parent="Collision/axis_z2"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Z"
+
+[node name="menu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="integrante_1" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0205078
+anchor_top = 0.475
+anchor_right = 0.452148
+anchor_bottom = 0.526667
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Valeriano Alarcon Valentino Samir"
+alignment = 0
+clip_text = true
+
+[node name="integrante_2" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 0
+anchor_left = 0.0205078
+anchor_top = 0.541667
+anchor_right = 0.452148
+anchor_bottom = 0.593334
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Bernabe Mesa Wakner Lazslo"
+alignment = 0
+clip_text = true
+
+[node name="integrante_3" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022
+anchor_top = 0.607
+anchor_right = 0.454
+anchor_bottom = 0.658
+offset_left = 0.471571
+offset_top = -0.200043
+offset_right = 0.102875
+offset_bottom = 0.200195
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Quiroz Jhon"
+alignment = 0
+clip_text = true
+
+[node name="integrante_4" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.023
+anchor_top = 0.67
+anchor_right = 0.455
+anchor_bottom = 0.722
+offset_left = 0.447571
+offset_top = -3.05176e-05
+offset_right = 0.0788879
+offset_bottom = -0.199829
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Pozgai Acosta Patrick Lazslo Arjuna"
+alignment = 0
+clip_text = true
+
+[node name="integrante_5" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022
+anchor_top = 0.732
+anchor_right = 0.454
+anchor_bottom = 0.783
+offset_left = 0.471571
+offset_top = -0.200043
+offset_right = 0.102875
+offset_bottom = 0.200165
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Castillo Isaac"
+alignment = 0
+clip_text = true
+
+[node name="integrante_6" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.022
+anchor_top = 0.793
+anchor_right = 0.454
+anchor_bottom = 0.845
+offset_left = 0.471571
+offset_top = 0.199768
+offset_right = 0.102875
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Quicaño Miguel Angel"
+alignment = 0
+clip_text = true
+
+[node name="logo" type="TextureRect" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.165
+anchor_right = 0.947
+anchor_bottom = 0.913
+offset_left = -1.0
+offset_right = 0.271973
+offset_bottom = 0.199951
+texture = ExtResource("8_gsl8m")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="label" type="Label" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0312498
+anchor_top = 0.38
+anchor_right = 0.441406
+anchor_bottom = 0.445
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 27
+text = "Nuestro equipo"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="addons" type="Label" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.763333
+anchor_right = 0.214844
+anchor_bottom = 1.0
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Addons reference: Vitah Vehicle - Godot Jolt"
+vertical_alignment = 2
+
+[node name="Label" type="Label" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.028
+anchor_top = 0.217
+anchor_right = 0.452
+anchor_bottom = 0.297
+offset_left = 0.327999
+offset_top = -1.2
+offset_right = 0.151978
+offset_bottom = -0.200012
+theme_override_fonts/font = ExtResource("5_f53yw")
+theme_override_font_sizes/font_size = 37
+text = "Simulador de Frenado"
+uppercase = true
+
+[node name="tune_engine" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.518
+anchor_top = 0.017
+anchor_right = 0.721
+anchor_bottom = 0.068
+offset_left = -0.432007
+offset_top = -0.200001
+offset_right = -0.304016
+offset_bottom = 0.199997
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Editor de curvas de torsión"
+alignment = 0
+clip_text = true
+
+[node name="dist" type="Button" parent="menu"]
+z_index = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.723
+anchor_top = 0.042
+anchor_right = 0.933
+anchor_bottom = 0.068
+offset_left = -0.352051
+offset_top = -15.2
+offset_right = -0.39209
+offset_bottom = 0.199997
+theme_override_fonts/font = ExtResource("5_f53yw")
+text = "Editor de formas de colisión"
+alignment = 0
+clip_text = true
+
+[connection signal="pressed" from="Engine_Tuner/back" to="." method="press" binds= ["back"]]
+[connection signal="pressed" from="Engine_Tuner/apply" to="." method="press" binds= ["engine_apply"]]
+[connection signal="pressed" from="Engine_Tuner/unitq" to="." method="press" binds= ["unit_tq"]]
+[connection signal="pressed" from="Engine_Tuner/unihp" to="." method="press" binds= ["unit_hp"]]
+[connection signal="pressed" from="Engine_Tuner/append" to="." method="press" binds= ["engine_append"]]
+[connection signal="confirmed" from="Engine_Tuner/confirm" to="." method="confirm" binds= ["engine_apply"]]
+[connection signal="confirmed" from="Engine_Tuner/confirm_append" to="." method="confirm" binds= ["engine_append"]]
+[connection signal="pressed" from="Collision/back" to="." method="press" binds= ["back"]]
+[connection signal="pressed" from="Collision/apply" to="." method="press" binds= ["collide_apply"]]
+[connection signal="confirmed" from="Collision/confirm" to="." method="confirm" binds= ["engine_apply"]]
+[connection signal="pressed" from="menu/tune_engine" to="." method="press" binds= ["engine"]]
+[connection signal="pressed" from="menu/dist" to="." method="press" binds= ["weight_dist"]]
