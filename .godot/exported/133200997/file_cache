@@ -1,0 +1,18 @@
+res://addons/vitavehicle_ui/interface.tscn::9978be22adda4ea4b1d21a0d71902a16::1734226226::res://.godot/exported/133200997/export-06672845f3db2e86ce9b9c107bad3551-interface.scn
+res://MAIN/misc/backfire_particles/fire.tscn::b22cacf04b33b1f8ac7f86094d887162::1732788993::res://.godot/exported/133200997/export-db1154917187ceb5c8bedb3139136acf-fire.scn
+res://MAIN/misc/engine sound/engine.tscn::5f0593f4ef773ec0e32f3941317107f9::1732788993::res://.godot/exported/133200997/export-806a18a47e67cdf6168409a634b4cda5-engine.scn
+res://MAIN/misc/mechanical sounds/other_sounds.tscn::23335cba7872a29cf7953edce670e6c0::1732788993::res://.godot/exported/133200997/export-5f626b1df20ccfe084e0a0e58fd0395e-other_sounds.scn
+res://MAIN/misc/tyre marks/tyremark.tscn::fd1ac179cf4c8903c9d139a915f55a3a::1732788993::res://.godot/exported/133200997/export-707f5db8513aa2870a717a773cbb3a67-tyremark.scn
+res://MAIN/misc/tyre smoke/smoke.tscn::147f9ef43de40e39f4c7ec5414a33fbe::1732788993::res://.godot/exported/133200997/export-0f769ac9883c79aed2debff6a799aab0-smoke.scn
+res://MAIN/misc/tyre sounds/tyres.tscn::e6c73a263a5d4b57626240252aad87e1::1732788993::res://.godot/exported/133200997/export-3212aeac7485460838279a1990a21779-tyres.scn
+res://MAIN/wheel.tscn::259ab02f7069a13832a5e6e89a43a4f2::1733703332::res://.godot/exported/133200997/export-bf0f571b65ff847d7d9cd1ccf6c0fb1a-wheel.scn
+res://MISC/graph/display.tscn::96a4541f5d06e27f64e19e24bf512792::1733703332::res://.godot/exported/133200997/export-3a1fcb3b5da44dfed7e40a10c704f2ae-display.scn
+res://MISC/tachometre/tacho.tscn::06255294031dad2c50aaec38e44e9e1c::1734227681::res://.godot/exported/133200997/export-985bfb688cb1fe8a908f16cb86f7760f-tacho.scn
+res://MISC/vertical progress bar/bar.tscn::2e6a8fa482ec066e6bf8f3a90544150c::1733704059::res://.godot/exported/133200997/export-0b187ff44579968b38dc0ec309aa9ea8-bar.scn
+res://MISC/visual gravity system/vgs.tscn::dc30a0e19378dd7e4d28bfd165fa833d::1732788998::res://.godot/exported/133200997/export-ebfec4f9c30cc230d55a58b9c68e6610-vgs.scn
+res://MISC/debugger.tscn::1ba24afeadef109fd0318be0ad7cbc0e::1734226673::res://.godot/exported/133200997/export-d094ba1cd934c4bef793b4f6bf452a7f-debugger.scn
+res://car.tscn::03992c09af82f8780e6a05ca96fc1fdd::1733704059::res://.godot/exported/133200997/export-7a257c599a55bbda69bf2d6f391fee60-car.scn
+res://default_bus_layout.tres::b7f482a1873c1858e9fbb6efd759cf42::1732793948::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
+res://default_env.tres::7d8d5b865cda114726a6783fc199afd7::1734228854::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://scene.tscn::3ba27230831e4f8de00e2c41d04b0d3d::1734227925::res://.godot/exported/133200997/export-78c237d4bfdb4e1d02e0b5f38ddfd8bd-scene.scn
+res://world.tscn::277ed3f2572e403067980c39181edc4f::1734228855::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn

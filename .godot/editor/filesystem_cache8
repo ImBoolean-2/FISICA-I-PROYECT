@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733881262
+::res://::1734228914
 car.tscn::PackedScene::6631471648446349857::1733704059::0::1::::<><>::uid://df2i30irlljkl::::res://MAIN/wheel.tscn<>res://MAIN/car.gd<>uid://c7m04qiimdydw::::res://MAIN/misc/engine sound/engine.tscn<>uid://ckt75vv2etwoa::::res://engine sounds/1.ogg<>uid://d1vmrvs3aj84o::::res://MAIN/misc/tyre sounds/tyres.tscn<>uid://cqdajib2yo6rv::::res://engine sounds/2.ogg<>uid://2pxba8eojlnr::::res://MAIN/misc/mechanical sounds/other_sounds.tscn<>uid://d6eb4cnoayb7::::res://engine sounds/3.ogg<>uid://bgadta1w1wxsb::::res://engine sounds/4.ogg<>uid://css4spfpu75vb::::res://engine sounds/5.ogg<>uid://cxwcusr1xcuau::::res://engine sounds/6.ogg<>uid://ckhm05fdvk5rf::::res://engine sounds/7.ogg<>uid://bvu4bihqkrgdt::::res://engine sounds/8.ogg
 default_bus_layout.tres::AudioBusLayout::843813187252370841::1732793948::0::1::::<><>::
-default_env.tres::Environment::3574772965805249146::1733881254::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1733704556::0::1::::<><>::
-Grid.png::CompressedTexture2D::8456910092940558063::1681236934::1733881263::1::::<><>::
-icon.png::CompressedTexture2D::5086476943662964858::1681236934::1732763704::1::::<><>::
-logo.png::CompressedTexture2D::207569326128621802::1733013310::1733013315::1::::<><>::
+default_env.tres::Environment::3574772965805249146::1734228854::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1734228871::0::1::::<><>::
+Grid.png::CompressedTexture2D::7382775741840753001::1734228582::1734228582::1::::<><>::
+icon.png::CompressedTexture2D::5086476943662964858::1681236934::1734228526::1::::<><>::
+logo.png::CompressedTexture2D::207569326128621802::1733013310::1734228526::1::::<><>::
 morning_env.scn::PackedScene::3285800326529799812::1733699441::0::1::::<><>::
-scene.tscn::PackedScene::227090977032352537::1732788998::0::1::::<><>::res://MAIN/ground_surface_variables.gd<>uid://cv0iolhv1qxsn::::res://MISC/scene swapper/scenes/Test Scene/assets/Grid.png
-world.tscn::PackedScene::5607897601783510848::1733881254::0::1::::<><>::res://MAIN/misc/camera.gd<>uid://b77dj0608nvq0::::res://MISC/debugger.tscn<>uid://diafjore21wn::::res://scene.tscn<>uid://bm2wwe6lx2b53::::res://morning_env.scn<>uid://c1qlms1ih0s2l::::res://car.tscn
+scene.tscn::PackedScene::5031150823319553995::1734227925::0::1::::<><>::
+world.tscn::PackedScene::5607897601783510848::1734228855::0::1::::<><>::res://MAIN/misc/camera.gd<>uid://b77dj0608nvq0::::res://MISC/debugger.tscn<>uid://ddgjic6yicaa0::::res://Grid.png<>res://MAIN/ground_surface_variables.gd<>uid://bm2wwe6lx2b53::::res://morning_env.scn<>uid://c1qlms1ih0s2l::::res://car.tscn
 ::res://addons/::1733881022
 ::res://addons/godot-jolt/::1732790986
 godot-jolt.gdextension::GDExtension::-1::1732763983::0::1::::<><>::
@@ -27,29 +27,29 @@ THIRDPARTY.txt::TextFile::-1::1732763983::0::1::::<><>::
 ::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/::1732790986
 ::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/_CodeSignature/::1732790986
 ::res://addons/godot-jolt/macos/godot-jolt_macos_editor.framework/Resources/::1732790986
-::res://addons/godot-jolt/windows/::1733880952
-::res://addons/vitavehicle_ui/::1733881124
+::res://addons/godot-jolt/windows/::1734228905
+::res://addons/vitavehicle_ui/::1734226226
 api_references.gd::GDScript::-1::1681236934::0::1::::<>VBoxContainer<>::
 folds.gd::GDScript::-1::1681236934::0::1::::<>Button<>::
 graph.gd::GDScript::-1::1681867494::0::1::::<>Control<>::
 handler.gd::GDScript::-1::1733698865::0::1::::<>Control<>::
-interface.tscn::PackedScene::4442507923572005845::1733881124::0::1::::<><>::res://addons/vitavehicle_ui/graph.gd<>res://addons/vitavehicle_ui/handler.gd<>res://addons/vitavehicle_ui/tune_vars.gd<>uid://btyvoi7jkhec0::::res://FONT/DroidSans.ttf<>uid://c7svv1ate0uo::::res://logo.png
+interface.tscn::PackedScene::4442507923572005845::1734226226::0::1::::<><>::res://addons/vitavehicle_ui/graph.gd<>res://addons/vitavehicle_ui/handler.gd<>res://addons/vitavehicle_ui/tune_vars.gd<>uid://c7svv1ate0uo::::res://logo.png
 plugin.cfg::TextFile::-1::1681855438::0::1::::<><>::
 script.gd::GDScript::-1::1733698748::0::1::::<>EditorPlugin<>::
 tune_vars.gd::GDScript::-1::1681236934::0::1::::<>Node<>::
-::res://engine sounds/::1733701535
-1.ogg::AudioStreamOggVorbis::5515950635343455660::1684094866::1733701535::1::::<><>::
-2.ogg::AudioStreamOggVorbis::5902072493993064419::1684094866::1733701535::1::::<><>::
-3.ogg::AudioStreamOggVorbis::274808421931080994::1684094866::1733701535::1::::<><>::
-4.ogg::AudioStreamOggVorbis::2807769867783918545::1684094866::1733701535::1::::<><>::
-5.ogg::AudioStreamOggVorbis::6075193085808202019::1684094866::1733701535::1::::<><>::
-6.ogg::AudioStreamOggVorbis::6432759204408029028::1684094866::1733701535::1::::<><>::
-7.ogg::AudioStreamOggVorbis::5489955280395088383::1684094866::1733701535::1::::<><>::
-8.ogg::AudioStreamOggVorbis::3903436965498546425::1684094866::1733701535::1::::<><>::
-::res://FONT/::1732790986
-Apache License.txt::TextFile::-1::1681236934::0::1::::<><>::
-DroidSans-Bold.ttf::FontFile::814875492688835281::1681236934::1732763702::1::::<><>::
-DroidSans.ttf::FontFile::3770854306919019749::1681236934::1732763702::1::::<><>::
+::res://engine sounds/::1734228525
+1.ogg::AudioStreamOggVorbis::5515950635343455660::1684094866::1734228525::1::::<><>::
+2.ogg::AudioStreamOggVorbis::5902072493993064419::1684094866::1734228525::1::::<><>::
+3.ogg::AudioStreamOggVorbis::274808421931080994::1684094866::1734228525::1::::<><>::
+4.ogg::AudioStreamOggVorbis::2807769867783918545::1684094866::1734228525::1::::<><>::
+5.ogg::AudioStreamOggVorbis::6075193085808202019::1684094866::1734228525::1::::<><>::
+6.ogg::AudioStreamOggVorbis::6432759204408029028::1684094866::1734228525::1::::<><>::
+7.ogg::AudioStreamOggVorbis::5489955280395088383::1684094866::1734228525::1::::<><>::
+8.ogg::AudioStreamOggVorbis::3903436965498546425::1684094866::1734228525::1::::<><>::
+::res://FONT/::1734228525
+Apache License.txt::TextFile::-1::1734226667::0::1::::<><>::
+DroidSans-Bold.ttf::FontFile::814875492688835281::1734226667::1734228525::1::::<><>::
+DroidSans.ttf::FontFile::3770854306919019749::1734226667::1734228525::1::::<><>::
 ::res://MAIN/::1733703332
 car.gd::GDScript::-1::1732793964::0::1::::<>RigidBody3D<>::
 ground_surface_variables.gd::GDScript::-1::1681236934::0::1::::<>StaticBody3D<>::
@@ -58,57 +58,57 @@ wheel.gd::GDScript::-1::1732788645::0::1::::<>RayCast3D<>::
 wheel.tscn::PackedScene::7566481533030281771::1733703332::0::1::::<><>::res://MAIN/wheel.gd<>uid://q8oxthp1fyj5::::res://MAIN/misc/tyre smoke/smoke.tscn<>res://MAIN/misc/forces debug/forces.gd<>uid://bg3o1u5r81wfs::::res://MAIN/misc/tyre marks/tyremark.tscn
 ::res://MAIN/misc/::1733703392
 camera.gd::GDScript::-1::1733703392::0::1::::<>Marker3D<>::
-::res://MAIN/misc/backfire_particles/::1732790986
-backfire.png::CompressedTexture2D::1826447217080004547::1681236934::1732763704::1::::<><>::
+::res://MAIN/misc/backfire_particles/::1734228525
+backfire.png::CompressedTexture2D::1826447217080004547::1681236934::1734228525::1::::<><>::
 fire.tscn::PackedScene::705909149023427794::1732788993::0::1::::<><>::uid://1a0k3s3amej8::::res://MAIN/misc/backfire_particles/backfire.png
-::res://MAIN/misc/engine sound/::1732790986
-1.ogg::AudioStreamOggVorbis::149951081896643068::1681236934::1732763702::1::::<><>::
-2.ogg::AudioStreamOggVorbis::1824096177497159649::1681236934::1732763702::1::::<><>::
-3.ogg::AudioStreamOggVorbis::3487395714593913845::1681236934::1732763702::1::::<><>::
-4.ogg::AudioStreamOggVorbis::7588590904052361174::1681236934::1732763702::1::::<><>::
-5.ogg::AudioStreamOggVorbis::2613914123099323313::1681236934::1732763702::1::::<><>::
-6.ogg::AudioStreamOggVorbis::193571348704226654::1681236934::1732763702::1::::<><>::
-7.ogg::AudioStreamOggVorbis::1004854756886319015::1681236934::1732763703::1::::<><>::
-8.ogg::AudioStreamOggVorbis::781180541865940057::1681236934::1732763703::1::::<><>::
+::res://MAIN/misc/engine sound/::1734228525
+1.ogg::AudioStreamOggVorbis::149951081896643068::1681236934::1734228525::1::::<><>::
+2.ogg::AudioStreamOggVorbis::1824096177497159649::1681236934::1734228525::1::::<><>::
+3.ogg::AudioStreamOggVorbis::3487395714593913845::1681236934::1734228525::1::::<><>::
+4.ogg::AudioStreamOggVorbis::7588590904052361174::1681236934::1734228525::1::::<><>::
+5.ogg::AudioStreamOggVorbis::2613914123099323313::1681236934::1734228525::1::::<><>::
+6.ogg::AudioStreamOggVorbis::193571348704226654::1681236934::1734228525::1::::<><>::
+7.ogg::AudioStreamOggVorbis::1004854756886319015::1681236934::1734228525::1::::<><>::
+8.ogg::AudioStreamOggVorbis::781180541865940057::1681236934::1734228525::1::::<><>::
 crossfade.gd::GDScript::-1::1681236934::0::1::::<>Node3D<>::
 engine.tscn::PackedScene::7045227462806062132::1732788993::0::1::::<><>::res://MAIN/misc/engine sound/crossfade.gd<>uid://cevw4kovy5m3::::res://MAIN/misc/engine sound/1.ogg<>uid://08uuk0xwxrsb::::res://MAIN/misc/engine sound/2.ogg<>uid://bpxk5r8icmm1r::::res://MAIN/misc/engine sound/3.ogg<>uid://dgd78o52ndm0m::::res://MAIN/misc/engine sound/4.ogg<>uid://bdig1v76vwarp::::res://MAIN/misc/engine sound/5.ogg<>uid://c01defmpipfi::::res://MAIN/misc/engine sound/6.ogg<>uid://ok02ts6abd24::::res://MAIN/misc/engine sound/7.ogg<>uid://len6um33bvft::::res://MAIN/misc/engine sound/8.ogg
 ::res://MAIN/misc/forces debug/::1732790986
 forces.gd::GDScript::-1::1681236934::0::1::::<>MeshInstance3D<>::
-::res://MAIN/misc/mechanical sounds/::1732790986
-backfire.ogg::AudioStreamOggVorbis::7889004507129533976::1681236934::1732763703::1::::<><>::
-blow.ogg::AudioStreamOggVorbis::3498642414525247070::1681236934::1732763703::1::::<><>::
+::res://MAIN/misc/mechanical sounds/::1734228525
+backfire.ogg::AudioStreamOggVorbis::7889004507129533976::1681236934::1734228525::1::::<><>::
+blow.ogg::AudioStreamOggVorbis::3498642414525247070::1681236934::1734228525::1::::<><>::
 other_sounds.gd::GDScript::-1::1681236934::0::1::::<>Node3D<>::
 other_sounds.tscn::PackedScene::1927462772344667615::1732788993::0::1::::<><>::uid://bc04yqh46sehf::::res://MAIN/misc/mechanical sounds/whine_low.ogg<>uid://bp31enuke271s::::res://MAIN/misc/mechanical sounds/blow.ogg<>uid://cjye8dqjyudob::::res://MAIN/misc/mechanical sounds/whine_high.ogg<>uid://cjo62602lou1c::::res://MAIN/misc/mechanical sounds/spool.ogg<>res://MAIN/misc/mechanical sounds/other_sounds.gd<>uid://dknq0s5ifqnau::::res://MAIN/misc/mechanical sounds/backfire.ogg
-spool.ogg::AudioStreamOggVorbis::5435374359982518278::1681236934::1732763703::1::::<><>::
-whine_high.ogg::AudioStreamOggVorbis::5454388008124557609::1681236934::1732763703::1::::<><>::
-whine_low.ogg::AudioStreamOggVorbis::2580212319211604451::1681236934::1732763703::1::::<><>::
-::res://MAIN/misc/textures/::1732790986
-rim.jpg::CompressedTexture2D::7464378851317413854::1681236934::1732763704::1::::<><>::
-sw.png::CompressedTexture2D::6028701875901194249::1681236934::1732763704::1::::<><>::
-sw_desired.png::CompressedTexture2D::4672329365470834247::1681236934::1732763704::1::::<><>::
+spool.ogg::AudioStreamOggVorbis::5435374359982518278::1681236934::1734228525::1::::<><>::
+whine_high.ogg::AudioStreamOggVorbis::5454388008124557609::1681236934::1734228525::1::::<><>::
+whine_low.ogg::AudioStreamOggVorbis::2580212319211604451::1681236934::1734228525::1::::<><>::
+::res://MAIN/misc/textures/::1734228526
+rim.jpg::CompressedTexture2D::7464378851317413854::1681236934::1734228525::1::::<><>::
+sw.png::CompressedTexture2D::6028701875901194249::1681236934::1734228525::1::::<><>::
+sw_desired.png::CompressedTexture2D::4672329365470834247::1681236934::1734228525::1::::<><>::
 ::res://MAIN/misc/tyre marks/::1732790986
 trail_clean.gd::GDScript::-1::1681236934::0::1::::<>MeshInstance3D<>::
 trail_sm.gd::GDScript::-1::1681908720::0::1::::<>Node3D<>::
 tyremark.tscn::PackedScene::2866253888803911060::1732788993::0::1::::<><>::res://MAIN/misc/tyre marks/trail_clean.gd<>res://MAIN/misc/tyre marks/trail_sm.gd
-::res://MAIN/misc/tyre smoke/::1732790986
-smoke.png::CompressedTexture2D::6119217112610577315::1681236934::1732763704::1::::<><>::
+::res://MAIN/misc/tyre smoke/::1734228525
+smoke.png::CompressedTexture2D::6119217112610577315::1681236934::1734228525::1::::<><>::
 smoke.tscn::PackedScene::1192038084724818200::1732788993::0::1::::<><>::res://MAIN/misc/tyre smoke/tyre_smoke.gd<>uid://ctggu2i2uiplr::::res://MAIN/misc/tyre smoke/smoke.png<>uid://bhnavtbeduelx::::res://MAIN/misc/tyre smoke/sphere_normals.png
-sphere_normals2.png::CompressedTexture2D::8601348623129901671::1681345036::1732763705::1::::<><>::
-sphere_normals.png::CompressedTexture2D::2904618001309106605::1681345092::1732763704::1::::<><>::
+sphere_normals2.png::CompressedTexture2D::8601348623129901671::1681345036::1734228525::1::::<><>::
+sphere_normals.png::CompressedTexture2D::2904618001309106605::1681345092::1734228525::1::::<><>::
 tyre_smoke.gd::GDScript::-1::1681236934::0::1::::<>Node3D<>::
-::res://MAIN/misc/tyre sounds/::1732790986
-offroad.ogg::AudioStreamOggVorbis::440321274424287445::1681236934::1732763702::1::::<><>::
-peel0.ogg::AudioStreamOggVorbis::6000113688998064023::1681236934::1732763702::1::::<><>::
-peel1.ogg::AudioStreamOggVorbis::8266698218543596359::1681236934::1732763702::1::::<><>::
-peel2.ogg::AudioStreamOggVorbis::9128429434386355609::1681236934::1732763702::1::::<><>::
-roll0.ogg::AudioStreamOggVorbis::1814833177555930015::1681236934::1732763702::1::::<><>::
-roll1.ogg::AudioStreamOggVorbis::2277986835550223673::1681236934::1732763702::1::::<><>::
-roll2.ogg::AudioStreamOggVorbis::8856070905148784731::1681236934::1732763702::1::::<><>::
+::res://MAIN/misc/tyre sounds/::1734228525
+offroad.ogg::AudioStreamOggVorbis::440321274424287445::1681236934::1734228525::1::::<><>::
+peel0.ogg::AudioStreamOggVorbis::6000113688998064023::1681236934::1734228525::1::::<><>::
+peel1.ogg::AudioStreamOggVorbis::8266698218543596359::1681236934::1734228525::1::::<><>::
+peel2.ogg::AudioStreamOggVorbis::9128429434386355609::1681236934::1734228525::1::::<><>::
+roll0.ogg::AudioStreamOggVorbis::1814833177555930015::1681236934::1734228525::1::::<><>::
+roll1.ogg::AudioStreamOggVorbis::2277986835550223673::1681236934::1734228525::1::::<><>::
+roll2.ogg::AudioStreamOggVorbis::8856070905148784731::1681236934::1734228525::1::::<><>::
 tyres.gd::GDScript::-1::1681236934::0::1::::<>Node3D<>::
 tyres.tscn::PackedScene::9028284012982398516::1732788993::0::1::::<><>::res://MAIN/misc/tyre sounds/tyres.gd<>res://MAIN/misc/tyre sounds/vars.gd<>uid://gjka6jqu3b8p::::res://MAIN/misc/tyre sounds/offroad.ogg<>uid://crqq84gd1fbsh::::res://MAIN/misc/tyre sounds/peel0.ogg<>uid://04ebjdn23ih8::::res://MAIN/misc/tyre sounds/roll0.ogg<>uid://7pqd0tyxcjgj::::res://MAIN/misc/tyre sounds/roll1.ogg<>uid://dp1pkuseb4gfn::::res://MAIN/misc/tyre sounds/peel1.ogg<>uid://dyf7guf22o6t0::::res://MAIN/misc/tyre sounds/roll2.ogg<>uid://d3b45tmngsrf2::::res://MAIN/misc/tyre sounds/peel2.ogg
 vars.gd::GDScript::-1::1681236934::0::1::::<>AudioStreamPlayer3D<>::
-::res://MISC/::1733881262
-debugger.tscn::PackedScene::4698723353516704613::1733881207::0::1::::<><>::res://MISC/misc scripts/debug.gd<>res://MISC/scene swapper/scene swapper.gd<>res://MISC/graphics_config/graphics config.gd<>res://MISC/misc scripts/show_info.gd<>res://MISC/controls config/slider_variables.gd<>uid://btyvoi7jkhec0::::res://FONT/DroidSans.ttf<>res://MISC/controls config/run.gd<>res://MISC/controls config/check_variables.gd<>uid://cr5l3r8wqkyn6::::res://MAIN/misc/textures/sw.png<>uid://b7tkt12prqch8::::res://MAIN/misc/textures/sw_desired.png<>uid://b1vo60v1pjs6w::::res://MISC/tachometre/tacho.tscn<>uid://lhtwmb7vich7::::res://MISC/vertical progress bar/bar.tscn<>uid://cnjbclsh2lklc::::res://MISC/visual gravity system/vgs.tscn<>uid://2ojbutsqhnh4::::res://MISC/graph/display.tscn
+::res://MISC/::1734226673
+debugger.tscn::PackedScene::4698723353516704613::1734226673::0::1::::<><>::res://MISC/misc scripts/debug.gd<>res://MISC/graphics_config/graphics config.gd<>res://MISC/misc scripts/show_info.gd<>res://MISC/controls config/slider_variables.gd<>uid://btyvoi7jkhec0::::res://FONT/DroidSans.ttf<>res://MISC/controls config/run.gd<>res://MISC/controls config/check_variables.gd<>uid://cr5l3r8wqkyn6::::res://MAIN/misc/textures/sw.png<>uid://b7tkt12prqch8::::res://MAIN/misc/textures/sw_desired.png<>uid://b1vo60v1pjs6w::::res://MISC/tachometre/tacho.tscn<>uid://c7svv1ate0uo::::res://logo.png<>uid://lhtwmb7vich7::::res://MISC/vertical progress bar/bar.tscn<>uid://cnjbclsh2lklc::::res://MISC/visual gravity system/vgs.tscn<>uid://2ojbutsqhnh4::::res://MISC/graph/display.tscn
 ::res://MISC/autoload/::1733180204
 graphics.gd::GDScript::-1::1733180204::0::1::::<>Node<>::
 ::res://MISC/controls config/::1733703200
@@ -125,18 +125,18 @@ debug.gd::GDScript::-1::1732896062::0::1::::<>Control<>::
 interior_feedback_camera.gd::GDScript::-1::1681089338::0::1::::<>Camera3D<>::
 show_info.gd::GDScript::-1::1682144426::0::1::::<>Control<>::
 sky_setting.gd::GDScript::-1::1682255094::0::1::::<>WorldEnvironment<>::
-::res://MISC/tachometre/::1733010854
-boost_background.png::CompressedTexture2D::6534855375804975963::1665619720::1732763704::1::::<><>::
-boost_needle.png::CompressedTexture2D::4387908329237424905::1665619732::1732763704::1::::<><>::
-rpm_background.png::CompressedTexture2D::3478064383889756452::1665619678::1732763704::1::::<><>::
-rpm_needle.png::CompressedTexture2D::6735319359072535973::1665619696::1732763705::1::::<><>::
+::res://MISC/tachometre/::1734228526
+boost_background.png::CompressedTexture2D::6534855375804975963::1665619720::1734228526::1::::<><>::
+boost_needle.png::CompressedTexture2D::4387908329237424905::1665619732::1734228526::1::::<><>::
+rpm_background.png::CompressedTexture2D::3478064383889756452::1665619678::1734228526::1::::<><>::
+rpm_needle.png::CompressedTexture2D::6735319359072535973::1665619696::1734228526::1::::<><>::
 tacho.gd::GDScript::-1::1733009975::0::1::::<>Control<>::
-tacho.tscn::PackedScene::4255589295353368628::1733010854::0::1::::<><>::uid://btyvoi7jkhec0::::res://FONT/DroidSans.ttf<>uid://bps2hhmk1v6t1::::res://MISC/tachometre/rpm_background.png<>uid://c27vyxa5uwwp6::::res://MISC/tachometre/rpm_needle.png<>res://MISC/tachometre/tacho.gd<>uid://b3rshdyrluwnh::::res://MISC/tachometre/boost_needle.png<>uid://c0dsd37tct6f4::::res://MISC/tachometre/boost_background.png
+tacho.tscn::PackedScene::4255589295353368628::1734227681::0::1::::<><>::uid://bps2hhmk1v6t1::::res://MISC/tachometre/rpm_background.png<>uid://c27vyxa5uwwp6::::res://MISC/tachometre/rpm_needle.png<>res://MISC/tachometre/tacho.gd<>uid://b3rshdyrluwnh::::res://MISC/tachometre/boost_needle.png<>uid://c0dsd37tct6f4::::res://MISC/tachometre/boost_background.png
 ::res://MISC/vertical progress bar/::1733704059
 bar.gd::GDScript::-1::1682139284::0::1::::<>ColorRect<>::
 bar.tscn::PackedScene::787721467932564966::1733704059::0::1::::<><>::res://MISC/vertical progress bar/bar.gd
-::res://MISC/visual gravity system/::1732790987
-circle.png::CompressedTexture2D::3070311884076357464::1607214800::1732763704::1::::<><>::
+::res://MISC/visual gravity system/::1734228526
+circle.png::CompressedTexture2D::3070311884076357464::1607214800::1734228526::1::::<><>::
 vgs.gd::GDScript::-1::1682176568::0::1::::<>Control<>::
 vgs.tscn::PackedScene::5703940628965641736::1732788998::0::1::::<><>::uid://bj0jt850o26wy::::res://MISC/visual gravity system/circle.png<>res://MISC/visual gravity system/vgs.gd<>res://MISC/visual gravity system/wheel_variables.gd
 wheel_variables.gd::GDScript::-1::1665641908::0::1::::<>Polygon2D<>::
